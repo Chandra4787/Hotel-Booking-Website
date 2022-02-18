@@ -25,18 +25,17 @@
   height: 40px;
 }
 #view {
-  margin: 20px 0;
+  margin: 50px 0;
   text-align: center;
   height: 70px;
   line-height: 70px;
   vertical-align: middle;
 }
 #cities {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 4%;
+  margin: 2% 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-row-gap: 2%;
 }
 .container {
   display: flex;
@@ -45,8 +44,8 @@
   align-items: center;
 }
 .cityImage {
-  height: 150px;
-  width: 150px;
+  height: 100%;
+  width: 100%;
   border-radius: 25%;
 }
 .image {
@@ -77,4 +76,16 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  #cities {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #cities {
+    grid-template-columns: 100%;
+  }
 }

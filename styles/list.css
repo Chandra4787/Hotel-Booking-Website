@@ -23,15 +23,16 @@
   background-color: #0d6efd;
 }
 #content {
-  margin-top: 4%;
+  margin-top: 2%;
   text-align: center;
 }
 
 #list-view {
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 6%;
-  margin: 4% 4% 6% 4%;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  margin: 2%;
 }
 
 #list-view img {
@@ -40,20 +41,18 @@
 }
 
 .hotels {
-  margin: 2%;
+  /* margin: 2%; */
   background-color: lightgrey;
-  width: 100%;
+  width: 95%;
   color: black;
   display: flex;
   height: 200px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 #clickImage {
   display: flex;
-}
-.hotels {
-  display: flex;
-  flex-direction: row;
-  width: 500px;
 }
 .hotels a {
   text-decoration: none;
@@ -67,10 +66,13 @@
 .hotels:hover {
   background-color: rosybrown;
 }
-
+#map {
+  width: 100%;
+}
 /* making list and map view visible on click */
 #map-view-button:checked ~ #map-view {
   display: grid;
+  width: 100%;
 }
 #map-view-button:checked ~ #list-view {
   display: none;
@@ -81,4 +83,12 @@
 }
 #list-view-button:checked ~ #map-view {
   display: none;
+}
+.fill {
+  color: orange;
+}
+@media only screen and (max-width: 575px) {
+  #list-view {
+    grid-template-columns: 100%;
+  }
 }
