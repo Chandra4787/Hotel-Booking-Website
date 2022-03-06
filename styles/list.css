@@ -1,3 +1,4 @@
+/* hover effect is implements on the hotel details by changing the background color */
 .hotels a:hover {
   color: black;
 }
@@ -33,6 +34,7 @@
   grid-column-gap: 2%;
   grid-row-gap: 2%;
   margin: 2%;
+  margin-bottom: 5%;
 }
 
 #list-view img {
@@ -41,7 +43,6 @@
 }
 
 .hotels {
-  /* margin: 2%; */
   background-color: lightgrey;
   width: 95%;
   color: black;
